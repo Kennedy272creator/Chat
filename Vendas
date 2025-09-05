@@ -1,0 +1,26 @@
+{
+  "chartType": "pie",
+  "data": {
+    "labels": ["Vendas Concluídas", "Vendas Devolvidas", "Vendas Não Concluídas"],
+    "datasets": [
+      {
+        "data": [65, 17, 18],
+        "backgroundColor": ["#4CAF50", "#F44336", "#FFC107"],
+        "hoverBackgroundColor": ["#66BB6A", "#EF5350", "#FFD54F"]
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "legend": {
+        "position": "top"
+      },
+      "tooltip": {
+        "callbacks": {
+          "label": "function(context) { return context.label + ': ' + context.raw + '%'; }"
+        }
+      }
+    }
+  }
+}
